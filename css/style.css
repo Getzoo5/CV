@@ -194,20 +194,10 @@ li:first-child a.active span::before {
 	color: #fff;
 	text-align: right;
 	opacity: 0;
+	background-color: #fff;
 }
 .nav-in h3 {
 	margin-right: 30px;
-}
-.bBox {
-	width: 100%;
-	height: 100%;
-	position: absolute;
-	transform: rotateZ(60deg);
-}
-.bBox .bb-in {
-	width: 200%;
-	height: 100%;
-	position: absolute;
 }
 
 /* 第一屏 */
@@ -220,10 +210,16 @@ li:first-child a.active span::before {
 }
 .sec1 h3 {
 	line-height: 180%;
-	text-shadow: 0 0 10px #000;
+	transition: box-shadow 1.6s 1s;
 }
 .sec1:hover {
-	box-shadow: 0 0 20px #333;
+	border: 1px #000;
+	background-color: rgba(100,100,100,.2);
+	box-shadow: 0 0 30px #000;
+}
+
+.sec1:hover h3 {
+	text-shadow: 0 0 10px #fff;
 }
 
 /* 第二屏 */

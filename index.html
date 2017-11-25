@@ -2,13 +2,14 @@
 <html>
 <head lang="en">
     <meta charset="UTF-8">
-    <title></title>
+    <title>前端工程师简历 | GETZOO5's CV</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
     <link rel="stylesheet" href="css/jquery.fullPage.css"/>
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-<div class="headBox"><img src="img/pic_03.png" alt=""/>
+<div class="headBox"><img src="img/admin.jpg" alt=""/>
 
     <!-- <h1> Get了没</h1> -->
 
@@ -20,23 +21,13 @@
     <div class="headB-in"><a href="#">Github</a></div>
 </div>
 <div class="nav">
-    <div class="navBtn iconfonta">&#xe604;</div>
-<!--    <div class="nav-in">
-        <h3>123</h3>
-
-        <h3>123</h3>
-
-        <h3>123</h3>
-
-        <h3>123</h3>
-    </div>-->
-    <canvas style="position: absolute;" id="canv"> </canvas>
+    <div class="navBtn iconfonta">&#xe604;
+        <div class="nav-in"></div>
+    </div>
+    <canvas style="position: absolute; z-index: -5;" id="canv"> </canvas>
     <!--[if IE 8]>
     <div class="banner" style="background:url(style/images/case-banner2.jpg) no-repeat center;"> </div>
     <![endif]-->
-</div>
-<div class="bBox">
-    <div class="bb-in"></div>
 </div>
 <div id="dowebok">
     <div class="section">
@@ -50,7 +41,7 @@
         <h3></h3>
         <div class="img"><img src="img/me.gif" alt=""/></div>
         <p>
-            您好，我叫Get了没，20岁，坐标武汉。 网络营销专业,但对前端很感兴趣，所以自学前端，今后的职业规划是朝着全栈发展，目前在学ajax、AnjularJs。 在实习的五个月来,本人在公司主要负责整个页面的前端开发，配合后台人员实现产品前端界面效果与功能。写过响应式页面，移动端页面，pc端页面。小的来说，商城，企业网站，视频，音频，评论，地图等都有涉及。 在此很感谢易云互动有限公司 对我的培养，让我学到了很多东西。目前就职于**公司。 <br><br></p>
+            您好，我叫Get了没，20岁，坐标武汉。 网络营销专业,但对前端很感兴趣，所以自学前端，今后的职业规划是朝着全栈发展，目前在学ajax、AnjularJs。 在实习的五个月来,本人在公司主要负责整个页面的前端开发，配合后台人员实现产品前端界面效果与功能。写过响应式页面，移动端页面，pc端页面。小的来说，商城，企业网站，视频，音频，评论，地图等都有涉及。 在此很感谢易云互动有限公司 对我的培养，让我学到了很多东西。目前就职于**公司。  <br><br></p>
 
         <p>不浮躁，喜欢前端，执行力，学习能力都棒棒哒！目前，能做点粗糙设计（比如本网站）。</p>
 
@@ -88,7 +79,7 @@
 
         setInterval(function () {
             $.fn.fullpage.moveSlideRight();
-        }, 1000);
+        }, 2000);
 
     });
     $(function () {
@@ -96,11 +87,9 @@
         $('.navBtn').click(function(){
             i++;
             if(i%2==1){
-                $('.bb-in').css({'top': '-100%','right': 0,'background-color': 'black','transition':'background-color 1s .2s'});
                 $('.navBtn').css({'background':'#fff','transition':'background-color 1s .2s','color':'#000'});
                 $('.nav-in').css({'opacity':'1','z-index':'5','transition':'opacity 1s'})
             }else{
-                $('.bb-in').css({'top': 0,'right': 0,'background': 'none','transition':'none'});
                 $('.navBtn').css({'background':'none','transition':'background-color 1s .2s','color':'#fff'});
                 $('.nav-in').css({'opacity':'0'})
             }
