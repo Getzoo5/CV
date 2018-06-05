@@ -326,7 +326,7 @@ li:first-child a.active span::before {
 }
 
 .sec4 p>a:hover::before {
-    content: '我的案例(点击查看)';
+    content: '';
     overflow: hidden;
     width: 100%;
     height: 100%;
